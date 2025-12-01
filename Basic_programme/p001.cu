@@ -19,4 +19,5 @@ int main()
     test01 <<<2, 64 >>> ();
     cudaDeviceSynchronize();
     return 0;
+    
 }
