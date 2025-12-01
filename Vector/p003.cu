@@ -60,8 +60,6 @@ int main() {
     free(A);
     free(B);
     free(C);
-    cudaEventDestroy(start);
-    cudaEventDestroy(stop);
 
     return 0;
 }
