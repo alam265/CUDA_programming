@@ -44,7 +44,7 @@ int main() {
 
 
     cudaEventRecord(start);
-    vectorAdd<<<14, 147>>>(d_A, d_B, d_C, SIZE); // 2 block * 1024 = 2048 threads
+    vectorAdd<<<2, 1024>>>(d_A, d_B, d_C, SIZE); // 2 block * 1024 = 2048 threads
     cudaEventRecord(stop);
     cudaDeviceSynchronize();
 
